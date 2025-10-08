@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joki Tugas - Solusi Cepat Tugas Kuliah</title>
+    <meta name="description" content="Layanan joki tugas kuliah: pembuatan makalah, presentasi, analisis data, dan lain-lain dengan pengerjaan cepat dan profesional.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        :root { --brand:#6f42c1; }
+        .navbar-brand span { color: var(--brand); font-weight:700; }
+        .hero { background: radial-gradient(ellipse at top left, #f5f0ff, #ffffff); }
+        .feature-icon { width:56px; height:56px; display:grid; place-items:center; border-radius:12px; background:#f3f1ff; color:var(--brand); }
+        .card-hover { transition: transform .2s ease, box-shadow .2s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 1rem 2rem rgba(0,0,0,.08); }
+        .gradient-btn { background:linear-gradient(135deg, var(--brand), #9b6bd6); border:none; }
+        .gradient-btn:hover { filter:brightness(.95); }
+        footer { background:#0f0f12; color:#cfcfd5; }
+        .section-title { font-weight:800; letter-spacing:.3px; }
+    </style>
+    <link rel="preconnect" href="https://avatars.githubusercontent.com">
+    <link rel="preconnect" href="https://jsonplaceholder.typicode.com">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <i class="bi bi-mortarboard-fill text-primary"></i>
+                <span>JokiTugas</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainnav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tim">Tim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tips">Tips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pemesanan">Pemesanan</a></li>
+                    <li class="nav-item"><a class="btn btn-sm gradient-btn text-white ms-lg-3" href="#pemesanan">Pesan Sekarang</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="py-5 hero">
+        <div class="container py-4">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold">Butuh Bantuan Tugas Kuliah? <span class="text-primary">Serahkan pada Ahlinya</span></h1>
+                    <p class="lead text-secondary mt-3">Kami melayani pembuatan makalah, presentasi, analisis data, dan pengembangan aplikasi mini dengan deadline fleksibel dan kualitas terjamin.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#pemesanan" class="btn gradient-btn text-white btn-lg">Mulai Pemesanan</a>
+                        <a href="#layanan" class="btn btn-outline-secondary btn-lg">Lihat Layanan</a>
+                    </div>
+                    <div class="d-flex gap-4 mt-4 text-secondary">
+                        <div><span class="h4 mb-0 d-block">500+</span><small>Project Selesai</small></div>
+                        <div><span class="h4 mb-0 d-block">4.9/5</span><small>Rating Pelanggan</small></div>
+                        <div><span class="h4 mb-0 d-block">24/7</span><small>Dukungan</small></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img class="img-fluid" alt="Ilustrasi produktivitas mahasiswa" src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="layanan" class="py-5">
+        <div class="container">
+            <h2 class="section-title h1 text-center mb-4">Layanan Unggulan</h2>
+            <p class="text-center text-secondary mb-5">Pilih layanan sesuai kebutuhanmu. Harga transparan, pengerjaan cepat.</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-hover h-100">
+                        <div class="card-body">
+                            <div class="feature-icon mb-3"><i class="bi bi-file-text"></i></div>
+                            <h5 class="card-title">Makalah & Esai</h5>
+                            <p class="card-text text-secondary">Riset sumber tepercaya, format rapi, bebas plagiarisme.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Mulai Rp50k</span>
+                                <a href="#pemesanan" class="btn btn-sm btn-outline-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-hover h-100">
+                        <div class="card-body">
+                            <div class="feature-icon mb-3"><i class="bi bi-bar-chart"></i></div>
+                            <h5 class="card-title">Analisis Data</h5>
+                            <p class="card-text text-secondary">SPSS/Excel/Python, visualisasi informatif, interpretasi jelas.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Mulai Rp100k</span>
+                                <a href="#pemesanan" class="btn btn-sm btn-outline-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-hover h-100">
+                        <div class="card-body">
+                            <div class="feature-icon mb-3"><i class="bi bi-sliders"></i></div>
+                            <h5 class="card-title">Presentasi</h5>
+                            <p class="card-text text-secondary">Slide menarik, ringkas, storytelling efektif, template premium.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Mulai Rp60k</span>
+                                <a href="#pemesanan" class="btn btn-sm btn-outline-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-hover h-100">
+                        <div class="card-body">
+                            <div class="feature-icon mb-3"><i class="bi bi-code-square"></i></div>
+                            <h5 class="card-title">Aplikasi Mini</h5>
+                            <p class="card-text text-secondary">Prototipe web sederhana tugas akhir/UTS dengan dokumentasi.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Mulai Rp150k</span>
+                                <a href="#pemesanan" class="btn btn-sm btn-outline-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tim" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title h1 text-center mb-4">Tim Kontributor</h2>
+            <p class="text-center text-secondary mb-5">Data diambil dari API GitHub Users (public).</p>
+            <div id="teamGrid" class="row g-4"></div>
+        </div>
+    </section>
+
+    <section id="tips" class="py-5">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h2 class="section-title h1 mb-0">Tips Produktivitas</h2>
+                <small class="text-secondary">Sumber: JSONPlaceholder Posts API</small>
+            </div>
+            <div id="tipsList" class="row g-4"></div>
+        </div>
+    </section>
+
+    <section id="pemesanan" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title h1 text-center mb-4">Form Pemesanan</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <form id="orderForm" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Nama Lengkap</label>
+                                        <input required type="text" name="nama" class="form-control" placeholder="Nama kamu">
+                                        <div class="invalid-feedback">Nama wajib diisi.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Email</label>
+                                        <input required type="email" name="email" class="form-control" placeholder="email@kampus.ac.id">
+                                        <div class="invalid-feedback">Email tidak valid.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Jenis Layanan</label>
+                                        <select required name="layanan" class="form-select">
+                                            <option value="">Pilih layanan</option>
+                                            <option>Makalah & Esai</option>
+                                            <option>Analisis Data</option>
+                                            <option>Presentasi</option>
+                                            <option>Aplikasi Mini</option>
+                                        </select>
+                                        <div class="invalid-feedback">Silakan pilih layanan.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Deadline</label>
+                                        <input required type="date" name="deadline" class="form-control">
+                                        <div class="invalid-feedback">Deadline wajib diisi.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Deskripsi Tugas</label>
+                                        <textarea required name="deskripsi" class="form-control" rows="5" placeholder="Ceritakan detail tugas, format, jumlah halaman, referensi, dll."></textarea>
+                                        <div class="invalid-feedback">Deskripsi wajib diisi.</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 mt-4">
+                                    <button class="btn gradient-btn text-white" type="submit">Kirim Pemesanan</button>
+                                    <button class="btn btn-outline-secondary" type="reset">Reset</button>
+                                </div>
+                            </form>
+                            <div id="orderResult" class="alert alert-success mt-3 d-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h5 class="mb-2">JokiTugas</h5>
+                    <p class="mb-0 text-secondary">Solusi tugas kuliah cepat, rapi, dan terpercaya. Hubungi kami kapan pun.</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a href="#pemesanan" class="btn gradient-btn text-white">Minta Penawaran</a>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary border-opacity-25">
+            <div class="d-flex justify-content-between small text-secondary">
+                <span>&copy; <span id="year"></span> JokiTugas. All rights reserved.</span>
+                <span>
+                    <i class="bi bi-whatsapp"></i> 08xx-xxxx-xxxx
+                    <span class="mx-2">|</span>
+                    <i class="bi bi-instagram"></i> @jokitugas.id
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Utility: create element helper
+    function h(tag, attrs = {}, children = []) {
+        const el = document.createElement(tag);
+        Object.entries(attrs).forEach(([k, v]) => {
+            if (k === 'class') el.className = v; else if (k.startsWith('on')) el.addEventListener(k.substring(2), v); else el.setAttribute(k, v);
+        });
+        children.forEach(c => el.appendChild(typeof c === 'string' ? document.createTextNode(c) : c));
+        return el;
+    }
+
+    // API 1: GitHub Users (third-party)
+    async function loadTeam() {
+        const container = document.getElementById('teamGrid');
+        container.innerHTML = '';
+        try {
+            const res = await fetch('https://api.github.com/users?per_page=8');
+            if (!res.ok) throw new Error('Gagal memuat data tim');
+            const data = await res.json();
+            data.forEach(user => {
+                const card = h('div', { class: 'col-sm-6 col-lg-3' }, [
+                    h('div', { class: 'card h-100 card-hover text-center' }, [
+                        h('img', { src: user.avatar_url, class: 'card-img-top', alt: user.login }),
+                        h('div', { class: 'card-body' }, [
+                            h('h6', { class: 'card-title mb-1' }, [user.login]),
+                            h('a', { href: user.html_url, target: '_blank', class: 'small text-decoration-none' }, ['Profil GitHub'])
+                        ])
+                    ])
+                ]);
+                container.appendChild(card);
+            });
+        } catch (err) {
+            container.innerHTML = '<div class="col-12"><div class="alert alert-warning">Tidak bisa memuat data tim saat ini.</div></div>';
+        }
+    }
+
+    // API 2: JSONPlaceholder Posts (third-party)
+    async function loadTips() {
+        const list = document.getElementById('tipsList');
+        list.innerHTML = '';
+        try {
+            const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=6');
+            if (!res.ok) throw new Error('Fail');
+            const posts = await res.json();
+            posts.forEach(p => {
+                const excerpt = p.body.length > 100 ? p.body.slice(0, 100) + '…' : p.body;
+                const card = h('div', { class: 'col-md-6 col-lg-4' }, [
+                    h('div', { class: 'card h-100 card-hover' }, [
+                        h('div', { class: 'card-body' }, [
+                            h('h5', { class: 'card-title' }, [p.title]),
+                            h('p', { class: 'card-text text-secondary' }, [excerpt])
+                        ]),
+                        h('div', { class: 'card-footer bg-white' }, [
+                            h('a', { href: `https://jsonplaceholder.typicode.com/posts/${p.id}`, target: '_blank', class: 'text-decoration-none' }, ['Baca selengkapnya →'])
+                        ])
+                    ])
+                ]);
+                list.appendChild(card);
+            });
+        } catch (e) {
+            list.innerHTML = '<div class="col-12"><div class="alert alert-warning">Tidak bisa memuat tips saat ini.</div></div>';
+        }
+    }
+
+    // Form handling (client-side)
+    const form = document.getElementById('orderForm');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+            form.classList.add('was-validated');
+            return;
+        }
+        const formData = Object.fromEntries(new FormData(form).entries());
+        const result = document.getElementById('orderResult');
+        result.classList.remove('d-none');
+        result.textContent = `Terima kasih, ${formData.nama}! Pesanan untuk layanan "${formData.layanan}" telah kami terima. Kami akan menghubungi ${formData.email}.`;
+        form.reset();
+        form.classList.remove('was-validated');
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    loadTeam();
+    loadTips();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
